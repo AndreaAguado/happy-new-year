@@ -7,12 +7,14 @@ let temp;
 const page = document.querySelector('.js-body');
 const title = document.querySelector('.js-title');
 const container = document.querySelector('.js-container');
+const audio = document.querySelector('.js-chimes');
 
 let html = '';
 const incrementAndShowCounter = () => {
     const time = document.querySelector('.js-time');
     if (counter < 12) {
         paintGrape();
+        audioPlayer();
         counter++;
         time.innerHTML = counter;
     }
@@ -32,6 +34,18 @@ function paintGrape() {
         html += `<img class="img js-img" src="../assets/images/uva.png" alt="uva">`;
         container.innerHTML = html;
     }
+}
+
+function audioPlayer() {
+    let audioHtmlTag = '';
+    audioHtmlTag += `<audio controls autoplay>
+    <source
+      src="https://dm0qx8t0i9gc9.cloudfront.net/previews/audio/BsTwCwBHBjzwub4i4/church-bell-tolling_Myv9034u_NWM.mp3"
+      type="audio/mpeg">
+    <p>Your browser doesn't support HTML5 audio</p>
+  </audio>`;
+    audio.innerHTML = audioHtmlTag;
+
 }
 
 function celebration() {
