@@ -6,7 +6,7 @@ let temp;
 
 const page = document.querySelector('.js-body');
 const title = document.querySelector('.js-title');
-const container = document.querySelector('.js-container');
+const grapesContainer = document.querySelector('.js-grapes-container');
 const audio = document.querySelector('.js-chimes');
 
 let html = '';
@@ -23,8 +23,8 @@ const incrementAndShowCounter = () => {
         clearTimeout(temp);
         time.classList.add('hidden');
         html = `<img class="img js-img hidden" src="./assets/images/uva.png" alt="uva">`;
-        container.innerHTML = html;
-        container.classList.add('hidden');
+        grapesContainer.innerHTML = html;
+        grapesContainer.classList.add('hidden');
         celebration();
     }
 };
@@ -32,7 +32,7 @@ const incrementAndShowCounter = () => {
 function paintGrape() {
     if (counter < 12) {
         html += `<img class="img js-img" src="../assets/images/uva.png" alt="uva">`;
-        container.innerHTML = html;
+        grapesContainer.innerHTML = html;
     }
 }
 
