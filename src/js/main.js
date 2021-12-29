@@ -38,4 +38,4 @@ function celebration() {
     page.classList.add('bg');
     title.classList.remove('hidden');
 }
-temp = setInterval(incrementAndShowCounter, 1000);
+temp = setInterval(incrementAndShowCounter, 3000);
