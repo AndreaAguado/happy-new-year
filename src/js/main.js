@@ -7,7 +7,7 @@ let temp;
 const page = document.querySelector('.js-body');
 const title = document.querySelector('.js-title');
 const grapesContainer = document.querySelector('.js-grapes-container');
-const audio = document.querySelector('.js-chimes');
+const audio = document.querySelector('.js-audio-container');
 
 let html = '';
 const incrementAndShowCounter = () => {
