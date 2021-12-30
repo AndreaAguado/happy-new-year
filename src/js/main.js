@@ -22,7 +22,7 @@ const incrementAndShowCounter = () => {
     else {
         clearTimeout(temp);
         time.classList.add('hidden');
-        html = `<img class="img js-img hidden" src="../../assets/images/uva.png" alt="uva">`;
+        html = `<img class="img js-img hidden" src="./assets/images/uva.png" alt="uva">`;
         grapesContainer.innerHTML = html;
         grapesContainer.classList.add('hidden');
         celebration();
@@ -31,7 +31,7 @@ const incrementAndShowCounter = () => {
 
 function paintGrape() {
     if (counter < 12) {
-        html += `<img class="img js-img" src="../../assets/images/uva.png" alt="uva">`;
+        html += `<img class="img js-img" src="./assets/images/uva.png" alt="uva">`;
         grapesContainer.innerHTML = html;
     }
 }
