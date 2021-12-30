@@ -1,8 +1,8 @@
 .body {
   height: 100vh;
   width: 100vw;
-  background-color: indigo;
-  background-color: fuchsia;
+  background-color: var(--page-bg-color);
+  font-family: var(--page-font);
 }
 .bg {
   background-image: url("https://images2.alphacoders.com/712/thumb-1920-712142.jpg");

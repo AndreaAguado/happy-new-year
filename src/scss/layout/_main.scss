@@ -9,13 +9,13 @@
 }
 .time {
   font-size: 200px;
-  font-family: monospace;
-  color: floralwhite;
+  font-family: inherit;
+  color: var(--title-color);
 }
 .title {
   font-size: 100px;
-  font-family: monospace;
-  color: white;
+  font-family: inherit;
+  color: var(--title-color);
   font-weight: bold;
 }
 .hidden {
