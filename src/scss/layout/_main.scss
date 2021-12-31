@@ -12,6 +12,7 @@
   font-family: inherit;
   color: var(--title-color);
   text-align: center;
+  filter: drop-shadow(1px 1px 1px black);
   @media all and (max-width: 500px) {
     font-size: 60px;
   }
